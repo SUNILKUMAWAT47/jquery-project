@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <title>jQuery Project</title>
+    <style>
+        main section div {
+            margin-left: 10%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1"
+        data-bs-whatever="@mdo">Heading</button>
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+        data-bs-whatever="@fat">Sub Heading</button>
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+        data-bs-whatever="@getbootstrap">Form</button>
+
+
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Heading</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="Form_Category">
+                        <div class="form_group" id="drg1">
+                            <input style="width: 465px; height: 40px;" class="HeadingForm" type="text"
+                                class="form-control" id="Heading1" placeholder="Enter Heading">
+                        </div><br>
+                        <button type="submit" class="btn btn-primary" id="headAdd">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sub_Heading_Form     -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sub Heading</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="SubCategory">
+                        <div class="form-group1 Head1">
+                            <select style="width: 465px; height: 40px;" class="Head_drp" id="drp">
+                                <option value="hector" selected disabled>-Heading-</option>
+                            </select>
+                        </div><br>
+
+                        <div id="drg2">
+                            <label for="message-text" class="col-form-label"></label>
+                            <input type="text" class="form-control text-1" placeholder="Enter Sub-Heading"
+                                id="message-text">
+                        </div>
+                        <hr>
+                        <button type="submit" class="btn btn-primary" id="btnSubCategory">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form -->
+
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">FORM</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+                <div class="modal-body">
+                    <form class="form-3">
+                        <div class="form-group my-2 Head2">
+                            <select style="width: 465px; height: 40px;" class="form_Head">
+                                <option value="hector" selected disabled>Heading</option>
+                            </select>
+                        </div>
+                        <div class="form-group Head3">
+                            <select style="width: 465px; height: 40px;" class="form_Sub">
+                                <option value="hector" selected disabled>Sub-Heading</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group my-2" id="drg3">
+                            <select style="width: 465px; height: 40px;" class="Down">
+                                <option selected disabled> Select  </option>
+                                <option value="Button">Button</option>
+                                <option value="checkbox">checkbox</option>
+                                <option value="color">color</option>
+                                
+                                <option value="date">date</option>
+                                <option value="datetime-local">datetime-local</option>
+                                <option value="email">email</option>
+                                <option value="file">file</option>
+                                <option value="hidden">hidden</option>
+                                <option value="image">image</option>
+                                <option value="month">month</option>
+                                <option value="number">number</option>
+                                <option value="password">password</option>
+                                <!-- <option value="radio">radio</option> -->
+                                <option value="range">range</option>
+                                <!-- <option value="reset">reset</option> -->
+                                <option value="submit">submit</option>
+                                <option value="search">search</option>
+                                <option value="tel">tel</option>
+                                <option value="time">time</option>
+                                <!-- <option value="url">url</option> -->
+                                <option value="week">week</option>
+
+                            </select>
+                        </div>
+                        <div class="lower-form ">
+                            <label for="message-text" class="col-form-label"></label>
+                            <input type="text" class="form-control  cls7" placeholder="class" 
+                            class="message-text">
+                        </div>
+                        <div class="lower-form ">
+                            <label for="message-text" class="col-form-label"></label>
+                            <input type="text" class="form-control id7" placeholder="id" class="message-text">
+                        </div>
+                        <div class="lower-form ">
+                            <label for="message-text" class="col-form-label"></label>
+                            <input type="text" class="form-control lbl7 " placeholder="label" class="message-text">
+                        </div>
+
+                        <div class="lower-form ">
+                            <label for="message-text" class="col-form-label"></label>
+                            <input type="text" class="form-control ph7 " placeholder="placeholder" class="message-text">
+                        </div>
+                        <div class="lower-form ">
+                            <label for="message-text" class="col-form-label"></label>
+                            <input type="text" class="form-control val7  " placeholder="value" class="message-text">
+                        </div>
+                        <div class="lower-form ">
+                            <label for="message-text" class="col-form-label"></label>
+                            <input type="text" class="form-control nam7 " placeholder="name" class="message-text">
+                        </div>
+                        <div class="lower-form ">
+                            <label for="message-text" class="col-form-label"></label>
+                            <input type="text" class="form-control act7 " placeholder="action" class="message-text">
+                        </div>
+                        <div class="lower-form ">
+                            <label for="message-text" class="col-form-label"></label>
+                            <input type="text" class="form-control opt7 " placeholder="option" class="message-text">
+                        </div><br>
+                        <!-- <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Disable
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Readonly
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Required
+                            </label>
+                          </div> -->
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+
+
+    </main>
+
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
